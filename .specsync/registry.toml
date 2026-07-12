@@ -1,0 +1,5 @@
+[registry]
+name = "go-algod-monitor-trust-wave7"
+
+[specs]
+algod-monitor = "specs/algod-monitor/algod-monitor.spec.md"
