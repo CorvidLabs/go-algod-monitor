@@ -1,0 +1,12 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783963318,
+      "digest": "0e0e64f3ae1bf73cded59878589ce504566de067cbad0b79f083353245709d36",
+      "note": "Definition approval for the reviewed scheduling-only correction: governance inputs must run the preserved Go matrix without changing its jobs, versions, or commands."
+    }
+  ],
+  "reopenings": []
+}
