@@ -5,10 +5,10 @@
   "title": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for go-algod-monitor",
   "description": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for go-algod-monitor",
   "kind": "migration",
-  "state": "draft",
+  "state": "implementing",
   "base_commit": "4b68ea9a1cfdda4dc883cdf3f99bfa2f2c78c175",
   "created_at": 1783884324,
-  "updated_at": 1783884333,
+  "updated_at": 1783958478,
   "affected_specs": [
     "algod-monitor"
   ],

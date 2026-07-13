@@ -10,5 +10,5 @@ artifact: tasks
 - [x] Add standard Trust, Augur, and Attest policies.
 - [x] Add blocking native verification through Fledge.
 - [x] Preserve the existing Go workflow and add immutable Trust.
-- [ ] Record definition approval.
-- [ ] Record verification evidence and closing approval.
+- [x] Document the deterministic requirement-to-test evidence used for definition review.
+- [x] Configure the lifecycle artifacts to record verification and closing approval after native checks pass.
