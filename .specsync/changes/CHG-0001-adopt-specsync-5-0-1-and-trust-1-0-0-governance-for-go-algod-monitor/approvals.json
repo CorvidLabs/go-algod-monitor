@@ -20,7 +20,55 @@
       "timestamp": 1783962921,
       "digest": "db9048c475959160b84f0a10db4a956a6d28cdf468ba1f06a67441da509d8f2e",
       "note": "Closing approval after committed-head formatting, vet, race-enabled health/config tests, build, and all five requirement evidence mappings passed."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783963420,
+      "digest": "7fc26b08dd511248c8a05c48e46c7905d51287a5ac69ad5fdac9917f300c62ec",
+      "note": "Fresh closing approval after audited reopen and successful native verification on the approved CHG2 scheduling commit; preserve prior approval history and accepted canonical deltas."
     }
   ],
-  "reopenings": []
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-go-algod-monitor",
+      "actor": "user:0xLeif",
+      "reason": "The approved CHG2 workflow scheduling correction changed current delivery inputs and requires fresh native verification; CHG1 semantic deltas remain accepted and must not replay.",
+      "timestamp": 1783963394,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783962921,
+        "digest": "db9048c475959160b84f0a10db4a956a6d28cdf468ba1f06a67441da509d8f2e",
+        "note": "Closing approval after committed-head formatting, vet, race-enabled health/config tests, build, and all five requirement evidence mappings passed."
+      },
+      "prior_verification": {
+        "timestamp": 1783962915,
+        "commit": "49eba5c3d52426653c76b0c596153281d08cca56",
+        "contract_digest": "152c9d3736d7096bc8c4db8fb87ce454c62ac1740c8abf52b9564be503e663e4",
+        "workspace_digest": "1486e49d23ebebed3507f05edb428145a4941442d76665f064b5520b3604840a",
+        "acceptance_input_digest": "40f9d473184b20911990d6509bc90d6e11901a8caa57e859bb17a72b4d4981ee",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-algod-monitor-001",
+          "REQ-algod-monitor-002",
+          "REQ-algod-monitor-003",
+          "REQ-algod-monitor-004",
+          "REQ-algod-monitor-005"
+        ]
+      },
+      "stale_acceptance_input_digest": "40f9d473184b20911990d6509bc90d6e11901a8caa57e859bb17a72b4d4981ee",
+      "current_acceptance_input_digest": "b42b5cf4f8491718ade777709c73fb7498004bc6ef3add8441c74524032f4ef5"
+    }
+  ]
 }
