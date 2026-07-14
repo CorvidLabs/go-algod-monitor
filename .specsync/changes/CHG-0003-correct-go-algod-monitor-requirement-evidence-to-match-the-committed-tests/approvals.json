@@ -1,0 +1,65 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784000419,
+      "digest": "905324b907577507b0fafd538374f412bb5c73a2220983efdadcc8690c7b29d9",
+      "note": "Definition approved for the nonsemantic evidence correction preserving all requirement IDs and product behavior"
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784000466,
+      "digest": "cd97f868f5f8efdb1570e85a9a774f256fb4ce4a2f292d5566b13951ef7aafde",
+      "note": "Closing approval after the proper successor change narrowed evidence to 22 existing tests and source-only branches; formatting, vet, race-enabled tests, build, and requirement mappings passed"
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784000551,
+      "digest": "bdba60319ab6b2d69c29dbffefd3315d838162c04d4af143eaaad367ec1f94c8",
+      "note": "Fresh closing approval after the changelog schema correction and unchanged requirement evidence passed native Go verification"
+    }
+  ],
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0003-correct-go-algod-monitor-requirement-evidence-to-match-the-committed-tests",
+      "actor": "user:0xLeif",
+      "reason": "Normalize the legacy CHG-0001 changelog row to the current three-column version/date/change schema; no requirement or product behavior changes",
+      "timestamp": 1784000534,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1784000466,
+        "digest": "cd97f868f5f8efdb1570e85a9a774f256fb4ce4a2f292d5566b13951ef7aafde",
+        "note": "Closing approval after the proper successor change narrowed evidence to 22 existing tests and source-only branches; formatting, vet, race-enabled tests, build, and requirement mappings passed"
+      },
+      "prior_verification": {
+        "timestamp": 1784000461,
+        "commit": "d8af03da45c94f622b8aeb5231b285b2eb20cf51",
+        "contract_digest": "905324b907577507b0fafd538374f412bb5c73a2220983efdadcc8690c7b29d9",
+        "workspace_digest": "3dfb7e1474a67c7d4a6a01c5c7564432bc8552561a48a4545a23e8668b854088",
+        "acceptance_input_digest": "8cf5de484fac1612fda1849f2feb30bfcea777c5979f5c968e54785f08f604b5",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-algod-monitor-001",
+          "REQ-algod-monitor-004",
+          "REQ-algod-monitor-005"
+        ]
+      },
+      "stale_acceptance_input_digest": "8cf5de484fac1612fda1849f2feb30bfcea777c5979f5c968e54785f08f604b5",
+      "current_acceptance_input_digest": "0dea32136e8cbaf4fbaad6c737bb5020fb0a904f5532e694fbd9283144cc741f"
+    }
+  ]
+}

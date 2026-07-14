@@ -1,9 +1,9 @@
 {
-  "timestamp": 1784000567,
+  "timestamp": 1784000551,
   "commit": "d8af03da45c94f622b8aeb5231b285b2eb20cf51",
-  "contract_digest": "152c9d3736d7096bc8c4db8fb87ce454c62ac1740c8abf52b9564be503e663e4",
+  "contract_digest": "905324b907577507b0fafd538374f412bb5c73a2220983efdadcc8690c7b29d9",
   "workspace_digest": "20294a46c433ea9c683a01c45fc1d8b17d6d633877284dcd6d7d4b5109b566d1",
-  "acceptance_input_digest": "5076f2469592976b51ef5e35aede75903c04e0cecf22e411b68334767bc53103",
+  "acceptance_input_digest": "0dea32136e8cbaf4fbaad6c737bb5020fb0a904f5532e694fbd9283144cc741f",
   "passed": true,
   "commands": [
     {
@@ -14,8 +14,6 @@
   ],
   "requirement_ids": [
     "REQ-algod-monitor-001",
-    "REQ-algod-monitor-002",
-    "REQ-algod-monitor-003",
     "REQ-algod-monitor-004",
     "REQ-algod-monitor-005"
   ]

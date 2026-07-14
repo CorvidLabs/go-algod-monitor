@@ -12,5 +12,8 @@ spec: algod-monitor.spec.md
 
 ### Integration Tests
 
-- Run the CLI against deterministic local HTTP fixtures and validate text/JSON
-  output and one-shot exit behavior.
+- No committed CLI integration tests exist. Text/JSON output, one-shot exit,
+  flag precedence, and immediate watch behavior are verified from `main.go`
+  source plus successful formatting, vet, race-enabled tests, and build.
+- No committed fixture forces a response-body read error; that branch is
+  verified from `health.go` source plus successful compilation.

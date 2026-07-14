@@ -26,14 +26,17 @@
     ".specsync/config.toml",
     ".specsync/config.json",
     ".specsync/version",
+    ".specsync/",
+    "specs/",
+    "fledge.toml",
+    ".trust.toml",
+    ".augur.toml",
+    ".attest.json",
     "cmd/",
     "internal/",
     "pkg/"
   ],
-  "ignored_paths": [
-    ".specsync/",
-    "specs/"
-  ],
+  "ignored_paths": [],
   "verification_commands": [
     "fledge lanes run verify"
   ],

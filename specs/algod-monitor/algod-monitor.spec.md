@@ -1,6 +1,6 @@
 ---
 module: algod-monitor
-version: 2
+version: 3
 status: active
 files:
   - cmd/algod-monitor/main.go
@@ -103,4 +103,5 @@ Then results retain configuration order and classify them healthy and degraded
 | Version | Date | Changes |
 |---------|------|---------|
 | 1 | 2026-07-12 | Initial active specification of existing monitor behavior |
-| 2026-07-13 | CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-go-algod-monitor: Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for go-algod-monitor |
+| 2 | 2026-07-13 | CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-go-algod-monitor: Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for go-algod-monitor |
+| 3 | 2026-07-14 | CHG-0003-correct-go-algod-monitor-requirement-evidence-to-match-the-committed-tests: Correct go-algod-monitor requirement evidence to match the committed tests |

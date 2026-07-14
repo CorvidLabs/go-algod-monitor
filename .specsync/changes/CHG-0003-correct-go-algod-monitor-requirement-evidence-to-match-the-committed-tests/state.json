@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0003-correct-go-algod-monitor-requirement-evidence-to-match-the-committed-tests",
+  "slug": "correct-go-algod-monitor-requirement-evidence-to-match-the-committed-tests",
+  "title": "Correct go-algod-monitor requirement evidence to match the committed tests",
+  "description": "Correct go-algod-monitor requirement evidence to match the committed tests",
+  "kind": "documentation",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "d8af03da45c94f622b8aeb5231b285b2eb20cf51",
+  "created_at": 1784000328,
+  "updated_at": 1784000551,
+  "affected_specs": [
+    "algod-monitor"
+  ],
+  "affected_paths": [
+    "specs/algod-monitor/",
+    ".specsync/changes/"
+  ],
+  "no_spec_change": false,
+  "no_spec_change_rationale": null,
+  "acceptance_criteria": [
+    "Requirements REQ-algod-monitor-001/004/005 distinguish existing automated tests from source-only evidence; companion testing accounts for all 22 committed tests without claiming missing body-read or CLI fixtures; strict SpecSync and native Go verification pass without product changes."
+  ],
+  "selected_artifacts": [
+    "context",
+    "docs",
+    "testing"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}
