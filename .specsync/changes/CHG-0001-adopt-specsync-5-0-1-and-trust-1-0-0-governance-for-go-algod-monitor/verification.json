@@ -1,0 +1,22 @@
+{
+  "timestamp": 1784000567,
+  "commit": "d8af03da45c94f622b8aeb5231b285b2eb20cf51",
+  "contract_digest": "152c9d3736d7096bc8c4db8fb87ce454c62ac1740c8abf52b9564be503e663e4",
+  "workspace_digest": "20294a46c433ea9c683a01c45fc1d8b17d6d633877284dcd6d7d4b5109b566d1",
+  "acceptance_input_digest": "5076f2469592976b51ef5e35aede75903c04e0cecf22e411b68334767bc53103",
+  "passed": true,
+  "commands": [
+    {
+      "command": "fledge lanes run verify",
+      "success": true,
+      "exit_code": 0
+    }
+  ],
+  "requirement_ids": [
+    "REQ-algod-monitor-001",
+    "REQ-algod-monitor-002",
+    "REQ-algod-monitor-003",
+    "REQ-algod-monitor-004",
+    "REQ-algod-monitor-005"
+  ]
+}

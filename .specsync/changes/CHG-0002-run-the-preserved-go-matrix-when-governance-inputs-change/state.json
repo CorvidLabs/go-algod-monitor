@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0002-run-the-preserved-go-matrix-when-governance-inputs-change",
+  "slug": "run-the-preserved-go-matrix-when-governance-inputs-change",
+  "title": "Run the preserved Go matrix when governance inputs change",
+  "description": "Run the preserved Go matrix when governance inputs change",
+  "kind": "bug_fix",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "68efb4b83bb65c1a12d97acc9815d1bc33558fe9",
+  "created_at": 1783963223,
+  "updated_at": 1783963442,
+  "affected_specs": [],
+  "affected_paths": [
+    ".github/workflows/go.yml"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "This correction changes only CI path-filter scheduling so the repository's preserved Go matrix validates governance-only pull-request heads; jobs, matrix versions, runtime behavior, and canonical product contracts remain unchanged.",
+  "acceptance_criteria": [
+    "Both push and pull_request path filters include .trust.toml; .specsync/**; fledge.toml; and .github/workflows/trust.yml while every Go job and matrix version remains unchanged; local strict SpecSync and native Trust verification pass before closing approval; hosted matrix results remain external"
+  ],
+  "selected_artifacts": [
+    "context",
+    "testing",
+    "tasks",
+    "research",
+    "design",
+    "plan"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}

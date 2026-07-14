@@ -9,6 +9,10 @@ on:
       - 'go.sum'
       - 'Makefile'
       - '.github/workflows/go.yml'
+      - '.trust.toml'
+      - '.specsync/**'
+      - 'fledge.toml'
+      - '.github/workflows/trust.yml'
   pull_request:
     branches: [main]
     paths:
@@ -17,6 +21,10 @@ on:
       - 'go.sum'
       - 'Makefile'
       - '.github/workflows/go.yml'
+      - '.trust.toml'
+      - '.specsync/**'
+      - 'fledge.toml'
+      - '.github/workflows/trust.yml'
 
 permissions:
   contents: read

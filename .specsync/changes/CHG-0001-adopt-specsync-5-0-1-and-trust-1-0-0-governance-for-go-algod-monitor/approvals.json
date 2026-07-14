@@ -1,0 +1,229 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783958394,
+      "digest": "30f8680bbe6270b867bcaa47b196357fca6bd7b291bb6d5094ccd5ee9f9841c7",
+      "note": "Definition approval after review of truthful completed preparation/configuration tasks, canonical requirements, and previously completed native verification; hosted CI and closing approval remain later gates."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783962851,
+      "digest": "152c9d3736d7096bc8c4db8fb87ce454c62ac1740c8abf52b9564be503e663e4",
+      "note": "Fresh definition approval after the explicitly authorized lifecycle reset and truthful requirement-to-test evidence mapping."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783962921,
+      "digest": "db9048c475959160b84f0a10db4a956a6d28cdf468ba1f06a67441da509d8f2e",
+      "note": "Closing approval after committed-head formatting, vet, race-enabled health/config tests, build, and all five requirement evidence mappings passed."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783963420,
+      "digest": "7fc26b08dd511248c8a05c48e46c7905d51287a5ac69ad5fdac9917f300c62ec",
+      "note": "Fresh closing approval after audited reopen and successful native verification on the approved CHG2 scheduling commit; preserve prior approval history and accepted canonical deltas."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784000159,
+      "digest": "7fb681d93f2f17fc0294b62a5e23ece030a72b494d81fae292223454dbd2ca84",
+      "note": "Fresh definition approval for the reviewed evidence, policy-path, 100% coverage, and portable agent-command corrections without product changes"
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784000306,
+      "digest": "152c9d3736d7096bc8c4db8fb87ce454c62ac1740c8abf52b9564be503e663e4",
+      "note": "Restored the accepted semantic definition; delivery-only review corrections remain for 100% policy coverage, governed inputs, portable agents, and runtime cache hygiene"
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784000317,
+      "digest": "358892cc2ae20a5d4c077a4b6a5e54f866f92a9c950e5666215881a88b3ad7ee",
+      "note": "Fresh closing approval after compatible delivery-only review corrections passed formatting, vet, 22 race-enabled tests, build, and 100% policy validation; accepted semantic definition remains unchanged"
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784000494,
+      "digest": "f6ad5ae93ac851e65eb69f1abaa7ca9aebd54aad9b80601ce7889f39950d1c96",
+      "note": "Fresh delivery approval after the supported CHG-0003 evidence successor; formatting, vet, 22 race-enabled tests, build, and all requirement mappings passed"
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784000567,
+      "digest": "ad59a5f5e6ca2a6292638d3a51db555501cf4b4b9c32fcae86b239b3883e54ad",
+      "note": "Final delivery approval after CHG-0003 evidence and changelog corrections passed formatting, vet, 22 race-enabled tests, build, and requirement mappings"
+    }
+  ],
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-go-algod-monitor",
+      "actor": "user:0xLeif",
+      "reason": "The approved CHG2 workflow scheduling correction changed current delivery inputs and requires fresh native verification; CHG1 semantic deltas remain accepted and must not replay.",
+      "timestamp": 1783963394,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783962921,
+        "digest": "db9048c475959160b84f0a10db4a956a6d28cdf468ba1f06a67441da509d8f2e",
+        "note": "Closing approval after committed-head formatting, vet, race-enabled health/config tests, build, and all five requirement evidence mappings passed."
+      },
+      "prior_verification": {
+        "timestamp": 1783962915,
+        "commit": "49eba5c3d52426653c76b0c596153281d08cca56",
+        "contract_digest": "152c9d3736d7096bc8c4db8fb87ce454c62ac1740c8abf52b9564be503e663e4",
+        "workspace_digest": "1486e49d23ebebed3507f05edb428145a4941442d76665f064b5520b3604840a",
+        "acceptance_input_digest": "40f9d473184b20911990d6509bc90d6e11901a8caa57e859bb17a72b4d4981ee",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-algod-monitor-001",
+          "REQ-algod-monitor-002",
+          "REQ-algod-monitor-003",
+          "REQ-algod-monitor-004",
+          "REQ-algod-monitor-005"
+        ]
+      },
+      "stale_acceptance_input_digest": "40f9d473184b20911990d6509bc90d6e11901a8caa57e859bb17a72b4d4981ee",
+      "current_acceptance_input_digest": "b42b5cf4f8491718ade777709c73fb7498004bc6ef3add8441c74524032f4ef5"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-go-algod-monitor",
+      "actor": "user:0xLeif",
+      "reason": "Apply the four accepted non-semantic review corrections: enforce 100% contract coverage, govern verification policy inputs, regenerate portable agent prompts, and narrow requirement evidence to tests that actually exist",
+      "timestamp": 1784000109,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783963420,
+        "digest": "7fc26b08dd511248c8a05c48e46c7905d51287a5ac69ad5fdac9917f300c62ec",
+        "note": "Fresh closing approval after audited reopen and successful native verification on the approved CHG2 scheduling commit; preserve prior approval history and accepted canonical deltas."
+      },
+      "prior_verification": {
+        "timestamp": 1783963403,
+        "commit": "82418bd96e6f835bcbc1c6d35e0e30030499582e",
+        "contract_digest": "152c9d3736d7096bc8c4db8fb87ce454c62ac1740c8abf52b9564be503e663e4",
+        "workspace_digest": "fd16f9c63e644e5cee31009bfc15159355a3b3cbf846e7ef144adf32953bd53f",
+        "acceptance_input_digest": "b42b5cf4f8491718ade777709c73fb7498004bc6ef3add8441c74524032f4ef5",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-algod-monitor-001",
+          "REQ-algod-monitor-002",
+          "REQ-algod-monitor-003",
+          "REQ-algod-monitor-004",
+          "REQ-algod-monitor-005"
+        ]
+      },
+      "stale_acceptance_input_digest": "b42b5cf4f8491718ade777709c73fb7498004bc6ef3add8441c74524032f4ef5",
+      "current_acceptance_input_digest": "6443b7d4698b43bc9b17fb48b8819fe571bdaeb81dc7f3f15642b652c36536a2"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-go-algod-monitor",
+      "actor": "user:0xLeif",
+      "reason": "CHG-0003 applied the supported nonsemantic requirement-evidence successor and changed CHG-0001 delivery inputs; refresh native delivery evidence without replaying its canonical delta",
+      "timestamp": 1784000475,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1784000317,
+        "digest": "358892cc2ae20a5d4c077a4b6a5e54f866f92a9c950e5666215881a88b3ad7ee",
+        "note": "Fresh closing approval after compatible delivery-only review corrections passed formatting, vet, 22 race-enabled tests, build, and 100% policy validation; accepted semantic definition remains unchanged"
+      },
+      "prior_verification": {
+        "timestamp": 1784000312,
+        "commit": "d8af03da45c94f622b8aeb5231b285b2eb20cf51",
+        "contract_digest": "152c9d3736d7096bc8c4db8fb87ce454c62ac1740c8abf52b9564be503e663e4",
+        "workspace_digest": "abc5c835737b7cb02443c44a24274f72985beac9f430ebe5647742cf7abcbebe",
+        "acceptance_input_digest": "22d6f7c1c2a07d5d62f66d5c9648a5dc7ec65ad5c9e70033db73673092ff08ac",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-algod-monitor-001",
+          "REQ-algod-monitor-002",
+          "REQ-algod-monitor-003",
+          "REQ-algod-monitor-004",
+          "REQ-algod-monitor-005"
+        ]
+      },
+      "stale_acceptance_input_digest": "22d6f7c1c2a07d5d62f66d5c9648a5dc7ec65ad5c9e70033db73673092ff08ac",
+      "current_acceptance_input_digest": "a41ad318bf715906b28502d4a7b036c5a29f9f92afe82e45edf3d0d1fe34b668"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-go-algod-monitor",
+      "actor": "user:0xLeif",
+      "reason": "CHG-0003 normalized the canonical changelog schema and changed CHG-0001 delivery inputs; refresh native delivery evidence without replaying its canonical delta",
+      "timestamp": 1784000562,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1784000494,
+        "digest": "f6ad5ae93ac851e65eb69f1abaa7ca9aebd54aad9b80601ce7889f39950d1c96",
+        "note": "Fresh delivery approval after the supported CHG-0003 evidence successor; formatting, vet, 22 race-enabled tests, build, and all requirement mappings passed"
+      },
+      "prior_verification": {
+        "timestamp": 1784000493,
+        "commit": "d8af03da45c94f622b8aeb5231b285b2eb20cf51",
+        "contract_digest": "152c9d3736d7096bc8c4db8fb87ce454c62ac1740c8abf52b9564be503e663e4",
+        "workspace_digest": "a070797d06821b2071d3fae027d93f2df879c95ad1757e6731c9550b5b742589",
+        "acceptance_input_digest": "a41ad318bf715906b28502d4a7b036c5a29f9f92afe82e45edf3d0d1fe34b668",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-algod-monitor-001",
+          "REQ-algod-monitor-002",
+          "REQ-algod-monitor-003",
+          "REQ-algod-monitor-004",
+          "REQ-algod-monitor-005"
+        ]
+      },
+      "stale_acceptance_input_digest": "a41ad318bf715906b28502d4a7b036c5a29f9f92afe82e45edf3d0d1fe34b668",
+      "current_acceptance_input_digest": "5076f2469592976b51ef5e35aede75903c04e0cecf22e411b68334767bc53103"
+    }
+  ]
+}
